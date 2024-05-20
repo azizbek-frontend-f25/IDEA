@@ -15,7 +15,7 @@ const Register = () => {
   const {setIsAuth} = useContext(AuthContext)
   const postVal = async () => {
     try {
-      const res = await axios.post('http://localhost:8000/auth/register', {
+      const res = await axios.post('http://localhost:5000/auth/register', {
         username: test ? regUsername.trim() : `${regUsername.trim()}@gmail.com`,
         password: regPassword,
       })
