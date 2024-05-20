@@ -14,7 +14,7 @@ const Login = () => {
   
   const postLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:8000/auth/login", {
+      const res = await axios.post("http://localhost:5000/auth/login", {
         username: test ? logUsername.trim() : `${logUsername.trim()}@gmail.com`,
         password: logPassword,
       })
